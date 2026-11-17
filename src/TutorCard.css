@@ -1,0 +1,121 @@
+.tutor-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  width: 320px; /* WIDER card */
+  min-height: 420px; /* Makes all cards the same height */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.tutor-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #a31b5d, #fce4f1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tutor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(163, 27, 93, 0.12);
+  border-color: #fce4f1;
+}
+
+.tutor-card:hover::before {
+  opacity: 1;
+}
+
+.tutor-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tutor-card:hover .tutor-image {
+  transform: scale(1.05);
+}
+
+.tutor-info h3 {
+  font-size: 18px;
+  color: #2d1b36;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.tutor-level {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.tutor-rating {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.reviews {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.available-badge {
+  background-color: #fce4f1;
+  color: #a31b5d;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* THIS IS THE FIX FOR THE CUT OFF TEXT */
+.tutor-speciality-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  flex-grow: 1; /* Pushes the button to the bottom */
+  display: flex;
+  align-items: center;
+}
+
+.view-profile-btn {
+  background-color: white;
+  color: #a31b5d;
+  border: 1.5px solid #a31b5d;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.view-profile-btn:hover {
+  background-color: #a31b5d;
+  color: white;
+  box-shadow: 0 4px 15px rgba(163, 27, 93, 0.3);
+}

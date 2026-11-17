@@ -1,0 +1,66 @@
+.find-tutor-page {
+  padding: 20px 40px;
+}
+
+.find-tutor-header {
+  background: linear-gradient(135deg, #2d1b36 0%, #4a154b 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.find-tutor-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.find-tutor-header p {
+  color: #e0d0e8;
+}
+
+.header-brain {
+  font-size: 100px;
+}
+
+.search-bar-container {
+  display: flex;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.filter-dropdown {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-btn {
+  background-color: #a31b5d;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}

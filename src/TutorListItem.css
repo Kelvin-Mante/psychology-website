@@ -1,0 +1,122 @@
+.tutor-list-item {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  margin-bottom: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adds a pink accent bar on the left side on hover */
+.tutor-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(180deg, #a31b5d, #4a154b);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tutor-list-item:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(163, 27, 93, 0.08);
+  border-color: #fce4f1;
+}
+
+.tutor-list-item:hover::before {
+  opacity: 1;
+}
+
+.list-tutor-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px; /* Modern squircle instead of circle */
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tutor-list-item:hover .list-tutor-image {
+  transform: scale(1.05);
+}
+
+.list-tutor-info {
+  flex: 2;
+}
+
+.list-tutor-info h3 {
+  font-size: 20px;
+  color: #2d1b36;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.list-tutor-level {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.list-tutor-rating {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.list-tutor-rating .reviews {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.list-tutor-speciality {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.list-tutor-availability {
+  flex: 1;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  padding: 0 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+.list-tutor-availability p:first-child {
+  font-weight: 700;
+  color: #2d1b36;
+  margin-bottom: 5px;
+}
+
+.book-now-btn {
+  background-color: #a31b5d;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(163, 27, 93, 0.2);
+}
+
+.book-now-btn:hover {
+  background-color: #82134a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(163, 27, 93, 0.4);
+} 

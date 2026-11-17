@@ -1,0 +1,53 @@
+.become-tutor-banner {
+  background-color: #2d1b36; /* Dark purple */
+  color: white;
+  margin: 40px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-logo {
+  background-color: #4a154b;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.banner-content h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.banner-content p {
+  font-size: 14px;
+  color: #e0d0e8;
+}
+
+.banner-btn {
+  background-color: #a31b5d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.banner-btn:hover {
+  background-color: #82134a;
+}

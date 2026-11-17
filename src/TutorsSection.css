@@ -1,0 +1,30 @@
+.tutors-section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tutors-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tutors-header h2 {
+  font-size: 24px;
+  color: #2d1b36;
+}
+
+.view-all-link {
+  color: #a31b5d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tutors-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}

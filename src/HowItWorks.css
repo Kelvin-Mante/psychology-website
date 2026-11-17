@@ -1,0 +1,95 @@
+.how-it-works {
+  padding: 80px 40px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #2d1b36;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, #a31b5d, transparent);
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(163, 27, 93, 0.08);
+  border-color: #fce4f1;
+}
+
+.step-icon {
+  background: linear-gradient(135deg, #fce4f1, #f8d0e5);
+  color: #a31b5d;
+  width: 80px;
+  height: 80px;
+  border-radius: 24px; /* Modern squircle instead of circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(163, 27, 93, 0.15);
+  transition: all 0.3s ease;
+}
+
+.step:hover .step-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, #a31b5d, #4a154b);
+  color: white;
+}
+
+.step h3 {
+  font-size: 20px;
+  color: #2d1b36;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.step p {
+  font-size: 15px;
+  color: #666;
+  max-width: 180px;
+  line-height: 1.5;
+}
+
+.arrow {
+  font-size: 28px;
+  color: #d1c8d6;
+  margin-top: 40px;
+  font-weight: 300;
+}

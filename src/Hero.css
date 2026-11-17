@@ -1,0 +1,92 @@
+.hero-section {
+  background: radial-gradient(circle at 80% 20%, #4a154b 0%, #1c0f23 80%);
+  color: white;
+  padding: 80px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin: 30px 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle edge */
+}
+
+/* Adds a glowing pink orb in the background */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: #a31b5d;
+  filter: blur(150px); /* Makes it a soft glow */
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.hero-content {
+  max-width: 50%;
+  position: relative;
+  z-index: 1; /* Keeps text above the glow */
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  background: linear-gradient(to right, #ffffff, #fce4f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #d1c8d6;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero-btn {
+  background-color: #a31b5d;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(163, 27, 93, 0.4);
+}
+
+.hero-btn:hover {
+  background-color: #82134a;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(163, 27, 93, 0.6);
+}
+
+.hero-image-container {
+  max-width: 45%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: perspective(1000px) rotateY(-5deg); /* 3D Tilt effect */
+  transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+  transform: perspective(1000px) rotateY(0deg) scale(1.02); /* Straightens on hover */
+}
