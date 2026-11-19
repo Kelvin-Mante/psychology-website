@@ -251,4 +251,93 @@
     border: none;
     padding: 10px 0;
   }
+}/* FIX: Prevent text from being cut off */
+.sessions-layout {
+  min-width: 0;
+  align-items: flex-start;
+}
+
+.sessions-content {
+  min-width: 0;
+  width: 100%;
+}
+
+.session-card {
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.session-info {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.session-info h3,
+.session-info p {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.session-time {
+  flex-shrink: 0;
+  white-space: normal;
+}
+
+.sessions-header {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sessions-header > div {
+  min-width: 0;
+}
+
+.sessions-header h1,
+.sessions-header p {
+  overflow-wrap: break-word;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+  .sessions-layout {
+    flex-direction: column;
+  }
+
+  .sessions-sidebar {
+    width: 100%;
+  }
+
+  .sessions-content {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .my-sessions-page {
+    padding: 20px;
+  }
+
+  .sessions-header {
+    padding: 30px 20px;
+  }
+
+  .sessions-header h1 {
+    font-size: 30px;
+  }
+
+  .header-calendar {
+    font-size: 65px;
+  }
+
+  .session-card {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .session-time {
+    border: none;
+    padding: 10px 0;
+  }
 }
