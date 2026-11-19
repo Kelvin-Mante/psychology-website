@@ -120,3 +120,18 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(163, 27, 93, 0.4);
 } 
+@media (max-width: 768px) {
+  .tutor-list-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .list-tutor-availability {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+}

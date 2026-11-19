@@ -64,3 +64,20 @@
   font-weight: 600;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .find-tutor-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .header-brain {
+    display: none; /* Hide big emoji to save space */
+  }
+  .search-bar-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .find-tutor-page {
+    padding: 15px;
+  }
+}

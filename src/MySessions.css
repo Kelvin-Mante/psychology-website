@@ -236,3 +236,19 @@
 .reschedule-box:hover .arrow-right {
   transform: translateX(5px);
 }
+@media (max-width: 768px) {
+  .sessions-layout {
+    flex-direction: column;
+  }
+  .sessions-sidebar {
+    width: 100%;
+  }
+  .session-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .session-time {
+    border: none;
+    padding: 10px 0;
+  }
+}

@@ -90,3 +90,24 @@
 .hero-image:hover {
   transform: perspective(1000px) rotateY(0deg) scale(1.02); /* Straightens on hover */
 }
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 30px;
+    margin: 15px;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .hero-content h1 {
+    font-size: 38px;
+  }
+  .hero-image-container {
+    max-width: 100%;
+  }
+  .hero-image {
+    transform: none; /* Remove 3D tilt on mobile */
+  }
+}

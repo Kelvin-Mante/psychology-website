@@ -10,7 +10,7 @@ import Pricing from './Pricing.jsx';
 import BecomeTutor from './BecomeTutor.jsx';
 import MySessions from './MySessions.jsx';
 import Login from './Login.jsx'; // We will build this next!
-
+import SignUp from './SignUp.jsx';
 function HomePage() {
   return (
     <>
@@ -23,6 +23,7 @@ function HomePage() {
 }
 
 function App() {
+
   return (
     <div>
       <Navbar />
@@ -33,6 +34,7 @@ function App() {
         <Route path="/become-tutor" element={<BecomeTutor />} />
         <Route path="/sessions" element={<MySessions />} />
         <Route path="/login" element={<Login />} />{/* We'll add the login route once we create the file */}
+      <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Footer />
     </div>
