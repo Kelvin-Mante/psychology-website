@@ -1,7 +1,7 @@
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { supabase } from './supabase';
+import { supabase } from './supabaseClient';
 
 function Login() {
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ function Login() {
       return;
     }
 
-    navigate('/sessions');
+    navigate('/');
   };
 
   return (

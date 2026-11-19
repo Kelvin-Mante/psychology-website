@@ -1,7 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from './AuthContext';
 import './Navbar.css';
 
 function Navbar() {
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/login');
+    } catch (error) {
+      console.error('Logout failed:', error);
+      alert('Could not log out. Please try again.');
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -20,7 +34,15 @@ function Navbar() {
         <Link to="/become-tutor" className="nav-item">Become a Tutor</Link>
       </ul>
 
-      <Link to="/login" className="login-btn">Log In</Link>
+      {user ? (
+        <button onClick={handleLogout} className="login-btn">
+          Log Out
+        </button>
+      ) : (
+        <Link to="/login" className="login-btn">
+          Log In
+        </Link>
+      )}
     </nav>
   );
 }
