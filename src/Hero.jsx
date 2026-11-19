@@ -1,5 +1,5 @@
 import './Hero.css';
-import heroImage from './assets/woman-8601818_1280.jpg'; 
+import heroImage from './assets/young-teenage-girl-lying-her-bed-studying-light-bedroom-home_1157-51939.jpg'; 
 
 function Hero() {
   return (
